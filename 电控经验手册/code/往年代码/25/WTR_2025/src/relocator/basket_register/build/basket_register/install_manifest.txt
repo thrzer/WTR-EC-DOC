@@ -1,0 +1,17 @@
+/home/xjj/basket_register/install/basket_register/lib/basket_register/basket_register_node
+/home/xjj/basket_register/install/basket_register/share/basket_register/src/basket_register_node.cpp
+/home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/package_run_dependencies/basket_register
+/home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/parent_prefix_path/basket_register
+/home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.sh
+/home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.dsv
+/home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.sh
+/home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.dsv
+/home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.bash
+/home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.sh
+/home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.zsh
+/home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.dsv
+/home/xjj/basket_register/install/basket_register/share/basket_register/package.dsv
+/home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/packages/basket_register
+/home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig.cmake
+/home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig-version.cmake
+/home/xjj/basket_register/install/basket_register/share/basket_register/package.xml

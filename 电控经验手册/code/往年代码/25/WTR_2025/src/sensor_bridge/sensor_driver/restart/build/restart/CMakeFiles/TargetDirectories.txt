@@ -1,0 +1,10 @@
+/home/xjj/Practice/restart/build/restart/CMakeFiles/uninstall.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/restart_uninstall.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/restart.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/test.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/edit_cache.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/rebuild_cache.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/list_install_components.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/install.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/install/local.dir
+/home/xjj/Practice/restart/build/restart/CMakeFiles/install/strip.dir

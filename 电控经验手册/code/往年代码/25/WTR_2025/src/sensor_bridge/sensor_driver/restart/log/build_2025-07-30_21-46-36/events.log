@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000157] (restart) JobQueued: {'identifier': 'restart', 'dependencies': OrderedDict()}
+[0.000563] (restart) JobStarted: {'identifier': 'restart'}
+[0.007106] (restart) JobProgress: {'identifier': 'restart', 'progress': 'cmake'}
+[0.007555] (restart) JobProgress: {'identifier': 'restart', 'progress': 'build'}
+[0.007938] (restart) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xjj/Practice/restart/build/restart', '--', '-j16', '-l16'], 'cwd': '/home/xjj/Practice/restart/build/restart', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'en_US:en'), ('USER', 'xjj'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xjj'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1618'), ('BUNDLED_DEBUGPY_PATH', '/home/xjj/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=f08fdb614fb8a3909a2a05b4688a1b58'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/xjj/Practice/restart/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xjj'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xjj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/xjj/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/xjj-Legion-R7000P-APH8:@/tmp/.ICE-unix/1618,unix/xjj-Legion-R7000P-APH8:/tmp/.ICE-unix/1618'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e88e1e15_716d_44c2_abec_ef3a917c6297'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/xjj/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-cc9c47f58ab8e009.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9SC892'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2379a71511.sock'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xjj/Practice/restart/install/restart:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GAZEBO_RESOURCE_PATH', ':/usr/share/gazebo-11:/usr/share/gazebo-11'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xjj/Practice/restart/build/restart'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=f08fdb614fb8a3909a2a05b4688a1b58'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xjj/Practice/restart/install/restart:/opt/ros/humble')]), 'shell': False}
+[0.050360] (restart) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target restart\x1b[0m\n'}
+[0.068190] (restart) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/restart.dir/src/restart.cpp.o\x1b[0m\n'}
+[0.099899] (-) TimerEvent: {}
+[0.200258] (-) TimerEvent: {}
+[0.300508] (-) TimerEvent: {}
+[0.400886] (-) TimerEvent: {}
+[0.501395] (-) TimerEvent: {}
+[0.601969] (-) TimerEvent: {}
+[0.702361] (-) TimerEvent: {}
+[0.802871] (-) TimerEvent: {}
+[0.903127] (-) TimerEvent: {}
+[1.003424] (-) TimerEvent: {}
+[1.103763] (-) TimerEvent: {}
+[1.204130] (-) TimerEvent: {}
+[1.304614] (-) TimerEvent: {}
+[1.405024] (-) TimerEvent: {}
+[1.505562] (-) TimerEvent: {}
+[1.605895] (-) TimerEvent: {}
+[1.706312] (-) TimerEvent: {}
+[1.806628] (-) TimerEvent: {}
+[1.906943] (-) TimerEvent: {}
+[2.007485] (-) TimerEvent: {}
+[2.107863] (-) TimerEvent: {}
+[2.208316] (-) TimerEvent: {}
+[2.308619] (-) TimerEvent: {}
+[2.409004] (-) TimerEvent: {}
+[2.449512] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Restart::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.449729] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:36:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[Kcatch\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449804] (restart) StderrLine: {'line': b'   36 |     int \x1b[01;31m\x1b[Kresult\x1b[m\x1b[K=3;\n'}
+[2.449863] (restart) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.449918] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:36:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450849] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:36:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.450887] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:36:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K=\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.450914] (restart) StderrLine: {'line': b'   36 |     int result\x1b[01;31m\x1b[K=\x1b[m\x1b[K3;\n'}
+[2.450941] (restart) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.450973] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:36:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.451000] (restart) StderrLine: {'line': b'   36 |     int \x1b[01;36m\x1b[Kresult\x1b[m\x1b[K=3;\n'}
+[2.451025] (restart) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.451049] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:36:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K=\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.451074] (restart) StderrLine: {'line': b'   36 |     int result\x1b[01;31m\x1b[K=\x1b[m\x1b[K3;\n'}
+[2.451098] (restart) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.451124] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:36:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K=\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.455924] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:39:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.456065] (restart) StderrLine: {'line': b'   39 |         \x1b[01;31m\x1b[Kresult\x1b[m\x1b[K=system("echo \'m\' | sudo -S systemctl restart fast_lio2.service");\n'}
+[2.456138] (restart) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.460821] (restart) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/Practice/restart/src/restart.cpp:41:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.460941] (restart) StderrLine: {'line': b'   41 |     if(\x1b[01;31m\x1b[Kresult\x1b[m\x1b[K==0)\n'}
+[2.461018] (restart) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.509102] (-) TimerEvent: {}
+[2.609408] (-) TimerEvent: {}
+[2.709888] (-) TimerEvent: {}
+[2.810277] (-) TimerEvent: {}
+[2.910864] (-) TimerEvent: {}
+[3.011279] (-) TimerEvent: {}
+[3.111731] (-) TimerEvent: {}
+[3.212020] (-) TimerEvent: {}
+[3.312286] (-) TimerEvent: {}
+[3.412582] (-) TimerEvent: {}
+[3.512940] (-) TimerEvent: {}
+[3.613447] (-) TimerEvent: {}
+[3.713868] (-) TimerEvent: {}
+[3.814443] (-) TimerEvent: {}
+[3.914754] (-) TimerEvent: {}
+[4.015007] (-) TimerEvent: {}
+[4.045372] (restart) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/restart.dir/build.make:76: CMakeFiles/restart.dir/src/restart.cpp.o] Error 1\n'}
+[4.045664] (restart) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/restart.dir/all] Error 2\n'}
+[4.045910] (restart) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.049389] (restart) CommandEnded: {'returncode': 2}
+[4.055058] (restart) JobEnded: {'identifier': 'restart', 'rc': 2}
+[4.065927] (-) EventReactorShutdown: {}

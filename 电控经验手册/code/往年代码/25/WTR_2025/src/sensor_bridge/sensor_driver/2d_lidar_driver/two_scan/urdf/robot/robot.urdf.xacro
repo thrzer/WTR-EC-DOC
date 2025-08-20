@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
+    <xacro:include filename="$(find two_scan)/urdf/robot/base.urdf.xacro" />
+    <!-- 传感器组件 -->
+    <xacro:include filename="$(find two_scan)/urdf/robot/sensor/laser.urdf.xacro" />
+     <!-- 执行器组件 -->
+    <xacro:include filename="$(find two_scan)/urdf/robot/actuator/wheel.urdf.xacro" />
+    <xacro:include filename="$(find two_scan)/urdf/robot/actuator/caster.urdf.xacro" />
+
+    <xacro:base_xacro length="0.12" radius="0.1" />
+    <!-- 传感器 -->
+    <xacro:laser_xacro laser_name="scan_left" xyz="-0.06 0 0.10" />
+    <xacro:laser_xacro laser_name="scan_right" xyz="0.06 0 0.10" />
+    <!-- 执行器主动轮+从动轮 -->
+    <xacro:wheel_xacro wheel_name="left" xyz="0 0.10 -0.06" />
+    <xacro:wheel_xacro wheel_name="right" xyz="0 -0.10 -0.06" />
+    <xacro:caster_xacro caster_name="front" xyz="0.08 0.0 -0.076" />
+    <xacro:caster_xacro caster_name="back" xyz="-0.08 0.0 -0.076" />
+    <!-- Gazebo 插件 -->
+    <xacro:include filename="$(find two_scan)/urdf/robot/plugins/gazebo_control_plugin.xacro" />
+    <xacro:gazebo_control_plugin/>
+    <!-- <xacro:gazebo_control_plugin /> -->
+    <xacro:include filename="$(find two_scan)/urdf/robot/plugins/gazebo_sensor_plugin.xacro" />
+    <xacro:gazebo_sensor_plugin />
+</robot>

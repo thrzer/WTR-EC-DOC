@@ -1,0 +1,183 @@
+[0.015s] Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xjj/basket_register -DCMAKE_INSTALL_PREFIX=/home/xjj/basket_register/install/basket_register
+[0.128s] -- The C compiler identification is GNU 12.3.0
+[0.201s] -- The CXX compiler identification is GNU 11.4.0
+[0.211s] -- Detecting C compiler ABI info
+[0.270s] -- Detecting C compiler ABI info - done
+[0.273s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.274s] -- Detecting C compile features
+[0.274s] -- Detecting C compile features - done
+[0.276s] -- Detecting CXX compiler ABI info
+[0.338s] -- Detecting CXX compiler ABI info - done
+[0.341s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.341s] -- Detecting CXX compile features
+[0.342s] -- Detecting CXX compile features - done
+[0.346s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.446s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.514s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.550s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.554s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.562s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.571s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.582s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.622s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.624s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.696s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.718s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.751s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.760s] -- Looking for pthread.h
+[0.822s] -- Looking for pthread.h - found
+[0.823s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.879s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.880s] -- Found Threads: TRUE  
+[0.921s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.954s] -- Checking for module 'eigen3'
+[0.965s] --   Found eigen3, version 3.4.0
+[0.999s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.000s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.023s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.037s] -- Checking for module 'flann'
+[1.049s] --   Found flann, version 1.9.1
+[1.081s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.081s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.110s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[1.118s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.241s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[1.241s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.243s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.249s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.260s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.274s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.347s] -- Found X11: /usr/include   
+[1.347s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.404s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.404s] -- Looking for gethostbyname
+[1.459s] -- Looking for gethostbyname - found
+[1.459s] -- Looking for connect
+[1.515s] -- Looking for connect - found
+[1.515s] -- Looking for remove
+[1.570s] -- Looking for remove - found
+[1.570s] -- Looking for shmat
+[1.626s] -- Looking for shmat - found
+[1.626s] -- Looking for IceConnectionNumber in ICE
+[1.680s] -- Looking for IceConnectionNumber in ICE - found
+[1.746s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[1.747s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[1.749s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[1.751s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[1.798s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[1.802s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[1.805s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[1.809s] -- Found utf8cpp: /usr/include/utf8cpp  
+[1.882s] -- Checking for module 'libusb-1.0'
+[1.892s] --   Found libusb-1.0, version 1.0.25
+[1.926s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.927s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[1.927s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.974s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[1.974s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.974s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[2.090s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.096s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.101s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.223s] -- Found Qhull version 8.0.2
+[2.347s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.447s] -- looking for PCL_COMMON
+[2.447s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.447s] -- looking for PCL_KDTREE
+[2.448s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.448s] -- looking for PCL_OCTREE
+[2.448s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.448s] -- looking for PCL_SEARCH
+[2.449s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.449s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.449s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.449s] -- looking for PCL_FILTERS
+[2.450s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.450s] -- looking for PCL_2D
+[2.450s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.450s] -- looking for PCL_GEOMETRY
+[2.450s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.450s] -- looking for PCL_IO
+[2.451s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.451s] -- looking for PCL_FEATURES
+[2.451s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.451s] -- looking for PCL_ML
+[2.452s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.452s] -- looking for PCL_SEGMENTATION
+[2.452s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.453s] -- looking for PCL_VISUALIZATION
+[2.453s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.453s] -- looking for PCL_SURFACE
+[2.454s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.454s] -- looking for PCL_REGISTRATION
+[2.459s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.459s] -- looking for PCL_KEYPOINTS
+[2.460s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.460s] -- looking for PCL_TRACKING
+[2.460s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.460s] -- looking for PCL_RECOGNITION
+[2.461s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.462s] -- looking for PCL_STEREO
+[2.463s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.463s] -- looking for PCL_APPS
+[2.463s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.463s] -- looking for PCL_IN_HAND_SCANNER
+[2.463s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.464s] -- looking for PCL_MODELER
+[2.464s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.464s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.465s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.465s] -- looking for PCL_OUTOFCORE
+[2.465s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.465s] -- looking for PCL_PEOPLE
+[2.466s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.466s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[2.468s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.490s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.503s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.583s] -- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)
+[2.596s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.659s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.659s] -- Configured cppcheck include dirs: 
+[2.659s] -- Configured cppcheck exclude dirs and/or files: 
+[2.661s] -- Added test 'lint_cmake' to check CMake code style
+[2.665s] -- Added test 'uncrustify' to check C / C++ code style
+[2.665s] -- Configured uncrustify additional arguments: 
+[2.666s] -- Added test 'xmllint' to check XML markup files
+[2.667s] -- Configuring done
+[2.722s] -- Generating done
+[2.729s] -- Build files have been written to: /home/xjj/basket_register/build/basket_register
+[2.745s] Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xjj/basket_register -DCMAKE_INSTALL_PREFIX=/home/xjj/basket_register/install/basket_register
+[2.747s] Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xjj/basket_register/build/basket_register -- -j16 -l16
+[2.791s] [ 50%] [32mBuilding CXX object CMakeFiles/basket_register_node.dir/src/basket_register_node.cpp.o[0m
+[7.128s] [01m[K/home/xjj/basket_register/src/basket_register_node.cpp:[m[K In member function ‘[01m[Kvoid BasketRegister::publish_marker(const Matrix4f&)[m[K’:
+[7.128s] [01m[K/home/xjj/basket_register/src/basket_register_node.cpp:452:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktransform[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.129s]   452 |     void publish_marker([01;35m[Kconst Eigen::Matrix4f& transform[m[K)
+[7.129s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[12.564s] [100%] [32m[1mLinking CXX executable basket_register_node[0m
+[13.666s] [100%] Built target basket_register_node
+[13.674s] Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xjj/basket_register/build/basket_register -- -j16 -l16
+[13.682s] Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xjj/basket_register/build/basket_register
+[13.686s] -- Install configuration: ""
+[13.686s] -- Installing: /home/xjj/basket_register/install/basket_register/lib/basket_register/basket_register_node
+[13.689s] -- Set runtime path of "/home/xjj/basket_register/install/basket_register/lib/basket_register/basket_register_node" to ""
+[13.689s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/src
+[13.689s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/src/basket_register_node.cpp
+[13.689s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/include
+[13.689s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/include/basket_register
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/package_run_dependencies/basket_register
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/parent_prefix_path/basket_register
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.sh
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.dsv
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.sh
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.dsv
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.bash
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.sh
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.zsh
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.dsv
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/package.dsv
+[13.690s] -- Installing: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/packages/basket_register
+[13.691s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig.cmake
+[13.691s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig-version.cmake
+[13.691s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/package.xml
+[13.692s] Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xjj/basket_register/build/basket_register

@@ -1,0 +1,10 @@
+/home/xjj/basket_register/build/basket_register/CMakeFiles/uninstall.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/basket_register_uninstall.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/basket_register_node.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/test.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/edit_cache.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/rebuild_cache.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/list_install_components.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/install.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/install/local.dir
+/home/xjj/basket_register/build/basket_register/CMakeFiles/install/strip.dir

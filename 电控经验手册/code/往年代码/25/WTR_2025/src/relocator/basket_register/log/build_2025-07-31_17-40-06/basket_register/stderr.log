@@ -1,0 +1,5 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[01m[K/home/xjj/basket_register/src/basket_register_node.cpp:[m[K In member function ‘[01m[Kvoid BasketRegister::publish_marker(const Matrix4f&)[m[K’:
+[01m[K/home/xjj/basket_register/src/basket_register_node.cpp:452:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktransform[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  452 |     void publish_marker([01;35m[Kconst Eigen::Matrix4f& transform[m[K)
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target restart[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/restart.dir/src/restart.cpp.o[0m
+[100%] [32m[1mLinking CXX executable restart[0m
+[100%] Built target restart
+-- Install configuration: ""
+-- Installing: /home/xjj/Practice/restart/install/restart/lib/restart/restart
+-- Set runtime path of "/home/xjj/Practice/restart/install/restart/lib/restart/restart" to ""
+-- Installing: /home/xjj/Practice/restart/install/restart/share/ament_index/resource_index/package_run_dependencies/restart
+-- Installing: /home/xjj/Practice/restart/install/restart/share/ament_index/resource_index/parent_prefix_path/restart
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/ament_prefix_path.sh
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/ament_prefix_path.dsv
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/path.sh
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/path.dsv
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.bash
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.sh
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.zsh
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.dsv
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/package.dsv
+-- Installing: /home/xjj/Practice/restart/install/restart/share/ament_index/resource_index/packages/restart
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/cmake/restartConfig.cmake
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/cmake/restartConfig-version.cmake
+-- Installing: /home/xjj/Practice/restart/install/restart/share/restart/package.xml

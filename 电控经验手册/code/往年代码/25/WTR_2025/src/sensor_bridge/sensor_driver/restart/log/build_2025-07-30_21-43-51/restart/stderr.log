@@ -1,0 +1,16 @@
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:[m[K In member function ‘[01m[Kvoid Restart::timer_callback()[m[K’:
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:30:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kx[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   30 |     float [01;35m[Kx[m[K(0), y(0), yaw_(0);
+      |           [01;35m[K^[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:30:17:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ky[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   30 |     float x(0), [01;35m[Ky[m[K(0), yaw_(0);
+      |                 [01;35m[K^[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:30:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kyaw_[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   30 |     float x(0), y(0), [01;35m[Kyaw_[m[K(0);
+      |                       [01;35m[K^~~~[m[K
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/restart.dir/build.make:197: restart] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/restart.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

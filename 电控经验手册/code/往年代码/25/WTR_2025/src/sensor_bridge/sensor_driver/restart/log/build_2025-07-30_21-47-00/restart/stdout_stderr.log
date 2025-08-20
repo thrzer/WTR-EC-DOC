@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target restart[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/restart.dir/src/restart.cpp.o[0m
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:[m[K In member function ‘[01m[Kvoid Restart::timer_callback()[m[K’:
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:31:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Ktry[m[K’
+   31 |     [01;31m[Ktry[m[K {
+      |     [01;31m[K^~~[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:35:7:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kcatch[m[K’
+   35 |     } [01;31m[Kcatch[m[K (tf2::TransformException &ex) {
+      |       [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/restart.dir/build.make:76: CMakeFiles/restart.dir/src/restart.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/restart.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,327 @@
+[0.000000] (-) TimerEvent: {}
+[0.000157] (basket_register) JobQueued: {'identifier': 'basket_register', 'dependencies': OrderedDict()}
+[0.000179] (basket_register) JobStarted: {'identifier': 'basket_register'}
+[0.009501] (basket_register) JobProgress: {'identifier': 'basket_register', 'progress': 'cmake'}
+[0.010074] (basket_register) Command: {'cmd': ['/usr/bin/cmake', '/home/xjj/basket_register', '-DCMAKE_INSTALL_PREFIX=/home/xjj/basket_register/install/basket_register'], 'cwd': '/home/xjj/basket_register/build/basket_register', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'en_US:en'), ('USER', 'xjj'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xjj'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=67177e3f3e9d5f27efca6586688b39b1'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xjj'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xjj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xjj-Legion-R7000P-APH8:@/tmp/.ICE-unix/1599,unix/xjj-Legion-R7000P-APH8:/tmp/.ICE-unix/1599'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/767d651c_4329_4120_8425_e1ed392e64d9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JWZIA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-90148bc6c7.sock'), ('GNOME_TERMINAL_SERVICE', ':1.132'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GAZEBO_RESOURCE_PATH', ':/usr/share/gazebo-11:/usr/share/gazebo-11'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xjj/basket_register/build/basket_register'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=67177e3f3e9d5f27efca6586688b39b1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099411] (-) TimerEvent: {}
+[0.127559] (basket_register) StdoutLine: {'line': b'-- The C compiler identification is GNU 12.3.0\n'}
+[0.199530] (-) TimerEvent: {}
+[0.201030] (basket_register) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.210720] (basket_register) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.269555] (basket_register) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.273338] (basket_register) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.273873] (basket_register) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.274275] (basket_register) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.276356] (basket_register) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299616] (-) TimerEvent: {}
+[0.337562] (basket_register) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.341454] (basket_register) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.341598] (basket_register) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.341855] (basket_register) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.345742] (basket_register) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399684] (-) TimerEvent: {}
+[0.446467] (basket_register) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499806] (-) TimerEvent: {}
+[0.514392] (basket_register) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.550194] (basket_register) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.553876] (basket_register) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.562063] (basket_register) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.571187] (basket_register) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.582567] (basket_register) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.599906] (-) TimerEvent: {}
+[0.621773] (basket_register) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.623894] (basket_register) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.695489] (basket_register) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.700036] (-) TimerEvent: {}
+[0.717833] (basket_register) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.751441] (basket_register) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.760253] (basket_register) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800145] (-) TimerEvent: {}
+[0.822217] (basket_register) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.822610] (basket_register) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.879517] (basket_register) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.880137] (basket_register) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900232] (-) TimerEvent: {}
+[0.921286] (basket_register) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.954013] (basket_register) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.965430] (basket_register) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.999241] (basket_register) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.999861] (basket_register) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.000284] (-) TimerEvent: {}
+[1.023078] (basket_register) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.037332] (basket_register) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.049483] (basket_register) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.080710] (basket_register) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.080898] (basket_register) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.100390] (-) TimerEvent: {}
+[1.110496] (basket_register) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.117921] (basket_register) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.200484] (-) TimerEvent: {}
+[1.240764] (basket_register) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.240981] (basket_register) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.243348] (basket_register) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.249415] (basket_register) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.260227] (basket_register) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.274206] (basket_register) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.300572] (-) TimerEvent: {}
+[1.346924] (basket_register) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.347279] (basket_register) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.400680] (-) TimerEvent: {}
+[1.404261] (basket_register) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.404448] (basket_register) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.459311] (basket_register) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.459451] (basket_register) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.500889] (-) TimerEvent: {}
+[1.514521] (basket_register) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.514790] (basket_register) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.570183] (basket_register) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.570391] (basket_register) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.600959] (-) TimerEvent: {}
+[1.626046] (basket_register) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.626247] (basket_register) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.679882] (basket_register) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.701042] (-) TimerEvent: {}
+[1.746188] (basket_register) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.747496] (basket_register) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.749115] (basket_register) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.751029] (basket_register) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.798201] (basket_register) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.801109] (-) TimerEvent: {}
+[1.802415] (basket_register) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.804959] (basket_register) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.809252] (basket_register) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.882253] (basket_register) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.892494] (basket_register) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.901214] (-) TimerEvent: {}
+[1.926068] (basket_register) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.926903] (basket_register) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.927022] (basket_register) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.974268] (basket_register) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.974472] (basket_register) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.974608] (basket_register) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[2.001324] (-) TimerEvent: {}
+[2.089610] (basket_register) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.095712] (basket_register) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.100831] (basket_register) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.101412] (-) TimerEvent: {}
+[2.201732] (-) TimerEvent: {}
+[2.222657] (basket_register) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.301806] (-) TimerEvent: {}
+[2.346920] (basket_register) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.401911] (-) TimerEvent: {}
+[2.446731] (basket_register) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.447481] (basket_register) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.447562] (basket_register) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.447999] (basket_register) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.448064] (basket_register) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.448484] (basket_register) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.448563] (basket_register) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.448979] (basket_register) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.449079] (basket_register) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.449475] (basket_register) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.449535] (basket_register) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.449990] (basket_register) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.450120] (basket_register) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.450205] (basket_register) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.450292] (basket_register) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.450358] (basket_register) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.450430] (basket_register) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.450920] (basket_register) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.451025] (basket_register) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.451468] (basket_register) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.451560] (basket_register) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.452067] (basket_register) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.452136] (basket_register) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.452572] (basket_register) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.452701] (basket_register) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[2.453158] (basket_register) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.453270] (basket_register) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[2.453710] (basket_register) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.453808] (basket_register) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[2.459263] (basket_register) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.459448] (basket_register) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[2.459964] (basket_register) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.460082] (basket_register) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[2.460534] (basket_register) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.460634] (basket_register) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[2.461560] (basket_register) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.461781] (basket_register) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[2.462608] (basket_register) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.462752] (basket_register) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[2.463103] (basket_register) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.463395] (basket_register) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[2.463522] (basket_register) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.463773] (basket_register) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[2.464096] (basket_register) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.464235] (basket_register) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[2.464675] (basket_register) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.464839] (basket_register) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[2.465204] (basket_register) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.465309] (basket_register) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[2.465752] (basket_register) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.466155] (basket_register) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[2.467621] (basket_register) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.489564] (basket_register) StdoutLine: {'line': b'-- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[2.502037] (-) TimerEvent: {}
+[2.503390] (basket_register) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.582628] (basket_register) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[2.596059] (basket_register) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.602156] (-) TimerEvent: {}
+[2.659054] (basket_register) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.659278] (basket_register) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.659360] (basket_register) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.661021] (basket_register) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.665293] (basket_register) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.665372] (basket_register) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.666193] (basket_register) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.667305] (basket_register) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.702260] (-) TimerEvent: {}
+[2.722199] (basket_register) StdoutLine: {'line': b'-- Generating done\n'}
+[2.729527] (basket_register) StdoutLine: {'line': b'-- Build files have been written to: /home/xjj/basket_register/build/basket_register\n'}
+[2.745041] (basket_register) CommandEnded: {'returncode': 0}
+[2.745856] (basket_register) JobProgress: {'identifier': 'basket_register', 'progress': 'build'}
+[2.746925] (basket_register) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xjj/basket_register/build/basket_register', '--', '-j16', '-l16'], 'cwd': '/home/xjj/basket_register/build/basket_register', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'en_US:en'), ('USER', 'xjj'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xjj'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=67177e3f3e9d5f27efca6586688b39b1'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xjj'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xjj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xjj-Legion-R7000P-APH8:@/tmp/.ICE-unix/1599,unix/xjj-Legion-R7000P-APH8:/tmp/.ICE-unix/1599'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/767d651c_4329_4120_8425_e1ed392e64d9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JWZIA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-90148bc6c7.sock'), ('GNOME_TERMINAL_SERVICE', ':1.132'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GAZEBO_RESOURCE_PATH', ':/usr/share/gazebo-11:/usr/share/gazebo-11'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xjj/basket_register/build/basket_register'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=67177e3f3e9d5f27efca6586688b39b1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.790551] (basket_register) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/basket_register_node.dir/src/basket_register_node.cpp.o\x1b[0m\n'}
+[2.802348] (-) TimerEvent: {}
+[2.902606] (-) TimerEvent: {}
+[3.002832] (-) TimerEvent: {}
+[3.103051] (-) TimerEvent: {}
+[3.203274] (-) TimerEvent: {}
+[3.303561] (-) TimerEvent: {}
+[3.403884] (-) TimerEvent: {}
+[3.504197] (-) TimerEvent: {}
+[3.604456] (-) TimerEvent: {}
+[3.705112] (-) TimerEvent: {}
+[3.805394] (-) TimerEvent: {}
+[3.905699] (-) TimerEvent: {}
+[4.006053] (-) TimerEvent: {}
+[4.106400] (-) TimerEvent: {}
+[4.206709] (-) TimerEvent: {}
+[4.306951] (-) TimerEvent: {}
+[4.407238] (-) TimerEvent: {}
+[4.507549] (-) TimerEvent: {}
+[4.607885] (-) TimerEvent: {}
+[4.708183] (-) TimerEvent: {}
+[4.808508] (-) TimerEvent: {}
+[4.908840] (-) TimerEvent: {}
+[5.009159] (-) TimerEvent: {}
+[5.109447] (-) TimerEvent: {}
+[5.209713] (-) TimerEvent: {}
+[5.309951] (-) TimerEvent: {}
+[5.410238] (-) TimerEvent: {}
+[5.510479] (-) TimerEvent: {}
+[5.610806] (-) TimerEvent: {}
+[5.711239] (-) TimerEvent: {}
+[5.811544] (-) TimerEvent: {}
+[5.911895] (-) TimerEvent: {}
+[6.012208] (-) TimerEvent: {}
+[6.112593] (-) TimerEvent: {}
+[6.213242] (-) TimerEvent: {}
+[6.313555] (-) TimerEvent: {}
+[6.413945] (-) TimerEvent: {}
+[6.514349] (-) TimerEvent: {}
+[6.614685] (-) TimerEvent: {}
+[6.714954] (-) TimerEvent: {}
+[6.815280] (-) TimerEvent: {}
+[6.915588] (-) TimerEvent: {}
+[7.015925] (-) TimerEvent: {}
+[7.116239] (-) TimerEvent: {}
+[7.127607] (basket_register) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/basket_register/src/basket_register_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BasketRegister::publish_marker(const Matrix4f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.128300] (basket_register) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xjj/basket_register/src/basket_register_node.cpp:452:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktransform\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.128726] (basket_register) StderrLine: {'line': b'  452 |     void publish_marker(\x1b[01;35m\x1b[Kconst Eigen::Matrix4f& transform\x1b[m\x1b[K)\n'}
+[7.129027] (basket_register) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.216368] (-) TimerEvent: {}
+[7.316699] (-) TimerEvent: {}
+[7.417030] (-) TimerEvent: {}
+[7.517354] (-) TimerEvent: {}
+[7.617684] (-) TimerEvent: {}
+[7.717956] (-) TimerEvent: {}
+[7.818276] (-) TimerEvent: {}
+[7.918589] (-) TimerEvent: {}
+[8.018981] (-) TimerEvent: {}
+[8.119308] (-) TimerEvent: {}
+[8.219694] (-) TimerEvent: {}
+[8.320005] (-) TimerEvent: {}
+[8.420290] (-) TimerEvent: {}
+[8.520549] (-) TimerEvent: {}
+[8.620879] (-) TimerEvent: {}
+[8.721190] (-) TimerEvent: {}
+[8.821522] (-) TimerEvent: {}
+[8.921826] (-) TimerEvent: {}
+[9.022129] (-) TimerEvent: {}
+[9.122832] (-) TimerEvent: {}
+[9.223136] (-) TimerEvent: {}
+[9.323439] (-) TimerEvent: {}
+[9.423736] (-) TimerEvent: {}
+[9.524054] (-) TimerEvent: {}
+[9.624371] (-) TimerEvent: {}
+[9.724669] (-) TimerEvent: {}
+[9.825001] (-) TimerEvent: {}
+[9.925324] (-) TimerEvent: {}
+[10.025636] (-) TimerEvent: {}
+[10.125966] (-) TimerEvent: {}
+[10.226248] (-) TimerEvent: {}
+[10.326579] (-) TimerEvent: {}
+[10.426889] (-) TimerEvent: {}
+[10.527202] (-) TimerEvent: {}
+[10.627516] (-) TimerEvent: {}
+[10.727896] (-) TimerEvent: {}
+[10.828209] (-) TimerEvent: {}
+[10.928518] (-) TimerEvent: {}
+[11.028845] (-) TimerEvent: {}
+[11.129165] (-) TimerEvent: {}
+[11.229473] (-) TimerEvent: {}
+[11.329866] (-) TimerEvent: {}
+[11.430184] (-) TimerEvent: {}
+[11.530498] (-) TimerEvent: {}
+[11.631190] (-) TimerEvent: {}
+[11.731452] (-) TimerEvent: {}
+[11.831752] (-) TimerEvent: {}
+[11.932059] (-) TimerEvent: {}
+[12.032379] (-) TimerEvent: {}
+[12.132706] (-) TimerEvent: {}
+[12.232986] (-) TimerEvent: {}
+[12.333322] (-) TimerEvent: {}
+[12.433641] (-) TimerEvent: {}
+[12.533967] (-) TimerEvent: {}
+[12.563692] (basket_register) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable basket_register_node\x1b[0m\n'}
+[12.634073] (-) TimerEvent: {}
+[12.734343] (-) TimerEvent: {}
+[12.834623] (-) TimerEvent: {}
+[12.934911] (-) TimerEvent: {}
+[13.035246] (-) TimerEvent: {}
+[13.135629] (-) TimerEvent: {}
+[13.235973] (-) TimerEvent: {}
+[13.336321] (-) TimerEvent: {}
+[13.436686] (-) TimerEvent: {}
+[13.537031] (-) TimerEvent: {}
+[13.637378] (-) TimerEvent: {}
+[13.665616] (basket_register) StdoutLine: {'line': b'[100%] Built target basket_register_node\n'}
+[13.674351] (basket_register) CommandEnded: {'returncode': 0}
+[13.674772] (basket_register) JobProgress: {'identifier': 'basket_register', 'progress': 'install'}
+[13.681175] (basket_register) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xjj/basket_register/build/basket_register'], 'cwd': '/home/xjj/basket_register/build/basket_register', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'en_US:en'), ('USER', 'xjj'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xjj'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=67177e3f3e9d5f27efca6586688b39b1'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xjj'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xjj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xjj-Legion-R7000P-APH8:@/tmp/.ICE-unix/1599,unix/xjj-Legion-R7000P-APH8:/tmp/.ICE-unix/1599'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/767d651c_4329_4120_8425_e1ed392e64d9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JWZIA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-90148bc6c7.sock'), ('GNOME_TERMINAL_SERVICE', ':1.132'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GAZEBO_RESOURCE_PATH', ':/usr/share/gazebo-11:/usr/share/gazebo-11'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xjj/basket_register/build/basket_register'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=67177e3f3e9d5f27efca6586688b39b1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.686107] (basket_register) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.686264] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/lib/basket_register/basket_register_node\n'}
+[13.689196] (basket_register) StdoutLine: {'line': b'-- Set runtime path of "/home/xjj/basket_register/install/basket_register/lib/basket_register/basket_register_node" to ""\n'}
+[13.689314] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/src\n'}
+[13.689377] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/src/basket_register_node.cpp\n'}
+[13.689470] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/include\n'}
+[13.689555] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/include/basket_register\n'}
+[13.689673] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/package_run_dependencies/basket_register\n'}
+[13.689738] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/parent_prefix_path/basket_register\n'}
+[13.689817] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.sh\n'}
+[13.689883] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.dsv\n'}
+[13.689964] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.sh\n'}
+[13.690044] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.dsv\n'}
+[13.690130] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.bash\n'}
+[13.690213] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.sh\n'}
+[13.690305] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.zsh\n'}
+[13.690385] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.dsv\n'}
+[13.690461] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/package.dsv\n'}
+[13.690572] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/packages/basket_register\n'}
+[13.690685] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig.cmake\n'}
+[13.690761] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig-version.cmake\n'}
+[13.690842] (basket_register) StdoutLine: {'line': b'-- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/package.xml\n'}
+[13.692104] (basket_register) CommandEnded: {'returncode': 0}
+[13.704720] (basket_register) JobEnded: {'identifier': 'basket_register', 'rc': 0}
+[13.705196] (-) EventReactorShutdown: {}

@@ -1,0 +1,29 @@
+[0.009s] Invoking command in '/home/xjj/Practice/restart/build/restart': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xjj/Practice/restart/build/restart -- -j16 -l16
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target restart[0m
+[0.068s] [ 50%] [32mBuilding CXX object CMakeFiles/restart.dir/src/restart.cpp.o[0m
+[2.449s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:[m[K In member function ‘[01m[Kvoid Restart::timer_callback()[m[K’:
+[2.449s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[Kresult[m[K’
+[2.449s]    36 |     int [01;31m[Kresult[m[K=3;
+[2.449s]       |         [01;31m[K^~~~~~[m[K
+[2.449s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kresult[m[K’
+[2.450s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ does not name a type
+[2.450s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:36:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K=[m[K’ token
+[2.450s]    36 |     int result[01;31m[K=[m[K3;
+[2.450s]       |               [01;31m[K^[m[K
+[2.450s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[2.450s]    36 |     int [01;36m[Kresult[m[K=3;
+[2.450s]       |         [01;36m[K^~~~~~[m[K
+[2.450s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:36:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K=[m[K’ token
+[2.451s]    36 |     int result[01;31m[K=[m[K3;
+[2.451s]       |               [01;31m[K^[m[K
+[2.451s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:36:15:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[2.455s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:39:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+[2.456s]    39 |         [01;31m[Kresult[m[K=system("echo 'm' | sudo -S systemctl restart fast_lio2.service");
+[2.456s]       |         [01;31m[K^~~~~~[m[K
+[2.460s] [01m[K/home/xjj/Practice/restart/src/restart.cpp:41:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+[2.460s]    41 |     if([01;31m[Kresult[m[K==0)
+[2.460s]       |        [01;31m[K^~~~~~[m[K
+[4.045s] gmake[2]: *** [CMakeFiles/restart.dir/build.make:76: CMakeFiles/restart.dir/src/restart.cpp.o] Error 1
+[4.045s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/restart.dir/all] Error 2
+[4.045s] gmake: *** [Makefile:146: all] Error 2
+[4.049s] Invoked command in '/home/xjj/Practice/restart/build/restart' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xjj/Practice/restart/build/restart -- -j16 -l16

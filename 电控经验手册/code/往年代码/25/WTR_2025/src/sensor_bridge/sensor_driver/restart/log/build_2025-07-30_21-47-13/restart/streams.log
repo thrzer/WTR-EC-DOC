@@ -1,0 +1,11 @@
+[0.007s] Invoking command in '/home/xjj/Practice/restart/build/restart': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xjj/Practice/restart/build/restart -- -j16 -l16
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target restart[0m
+[0.067s] [ 50%] [32mBuilding CXX object CMakeFiles/restart.dir/src/restart.cpp.o[0m
+[4.099s] [100%] [32m[1mLinking CXX executable restart[0m
+[4.198s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[4.199s] (.text+0x1b): undefined reference to `main'
+[4.205s] collect2: error: ld returned 1 exit status
+[4.208s] gmake[2]: *** [CMakeFiles/restart.dir/build.make:197: restart] Error 1
+[4.208s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/restart.dir/all] Error 2
+[4.208s] gmake: *** [Makefile:146: all] Error 2
+[4.210s] Invoked command in '/home/xjj/Practice/restart/build/restart' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xjj/Practice/restart/build/restart -- -j16 -l16

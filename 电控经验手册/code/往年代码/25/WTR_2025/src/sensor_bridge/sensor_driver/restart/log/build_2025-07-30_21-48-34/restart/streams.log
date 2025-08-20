@@ -1,0 +1,26 @@
+[0.009s] Invoking command in '/home/xjj/Practice/restart/build/restart': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xjj/Practice/restart/build/restart -- -j16 -l16
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target restart[0m
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/restart.dir/src/restart.cpp.o[0m
+[4.201s] [100%] [32m[1mLinking CXX executable restart[0m
+[4.310s] [100%] Built target restart
+[4.321s] Invoked command in '/home/xjj/Practice/restart/build/restart' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xjj/Practice/restart/build/restart -- -j16 -l16
+[4.331s] Invoking command in '/home/xjj/Practice/restart/build/restart': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xjj/Practice/restart/build/restart
+[4.339s] -- Install configuration: ""
+[4.339s] -- Installing: /home/xjj/Practice/restart/install/restart/lib/restart/restart
+[4.339s] -- Set runtime path of "/home/xjj/Practice/restart/install/restart/lib/restart/restart" to ""
+[4.339s] -- Installing: /home/xjj/Practice/restart/install/restart/share/ament_index/resource_index/package_run_dependencies/restart
+[4.339s] -- Installing: /home/xjj/Practice/restart/install/restart/share/ament_index/resource_index/parent_prefix_path/restart
+[4.339s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/ament_prefix_path.sh
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/ament_prefix_path.dsv
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/path.sh
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/environment/path.dsv
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.bash
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.sh
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.zsh
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/local_setup.dsv
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/package.dsv
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/ament_index/resource_index/packages/restart
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/cmake/restartConfig.cmake
+[4.340s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/cmake/restartConfig-version.cmake
+[4.341s] -- Installing: /home/xjj/Practice/restart/install/restart/share/restart/package.xml
+[4.343s] Invoked command in '/home/xjj/Practice/restart/build/restart' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xjj/Practice/restart/build/restart

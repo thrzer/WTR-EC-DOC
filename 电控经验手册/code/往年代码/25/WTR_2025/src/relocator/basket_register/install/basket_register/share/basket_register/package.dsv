@@ -1,0 +1,8 @@
+source;share/basket_register/hook/cmake_prefix_path.ps1
+source;share/basket_register/hook/cmake_prefix_path.dsv
+source;share/basket_register/hook/cmake_prefix_path.sh
+source;share/basket_register/local_setup.bash
+source;share/basket_register/local_setup.dsv
+source;share/basket_register/local_setup.ps1
+source;share/basket_register/local_setup.sh
+source;share/basket_register/local_setup.zsh

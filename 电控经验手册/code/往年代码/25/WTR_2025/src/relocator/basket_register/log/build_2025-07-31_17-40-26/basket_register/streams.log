@@ -1,0 +1,27 @@
+[0.011s] Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xjj/basket_register/build/basket_register -- -j16 -l16
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target basket_register_node[0m
+[0.095s] [100%] Built target basket_register_node
+[0.109s] Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xjj/basket_register/build/basket_register -- -j16 -l16
+[0.122s] Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xjj/basket_register/build/basket_register
+[0.129s] -- Install configuration: ""
+[0.129s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/lib/basket_register/basket_register_node
+[0.129s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/src
+[0.129s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/src/basket_register_node.cpp
+[0.129s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/include
+[0.129s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/include/basket_register
+[0.129s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/package_run_dependencies/basket_register
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/parent_prefix_path/basket_register
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.sh
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/ament_prefix_path.dsv
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.sh
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/environment/path.dsv
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.bash
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.sh
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.zsh
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/local_setup.dsv
+[0.130s] -- Installing: /home/xjj/basket_register/install/basket_register/share/basket_register/package.dsv
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/ament_index/resource_index/packages/basket_register
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig.cmake
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/cmake/basket_registerConfig-version.cmake
+[0.130s] -- Up-to-date: /home/xjj/basket_register/install/basket_register/share/basket_register/package.xml
+[0.132s] Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xjj/basket_register/build/basket_register

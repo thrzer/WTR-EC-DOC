@@ -1,0 +1,6 @@
+Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xjj/basket_register -DCMAKE_INSTALL_PREFIX=/home/xjj/basket_register/install/basket_register
+Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xjj/basket_register -DCMAKE_INSTALL_PREFIX=/home/xjj/basket_register/install/basket_register
+Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xjj/basket_register/build/basket_register -- -j16 -l16
+Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xjj/basket_register/build/basket_register -- -j16 -l16
+Invoking command in '/home/xjj/basket_register/build/basket_register': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xjj/basket_register/build/basket_register
+Invoked command in '/home/xjj/basket_register/build/basket_register' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xjj/basket_register/build/basket_register

@@ -1,0 +1,25 @@
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:[m[K In member function ‘[01m[Kvoid Restart::timer_callback()[m[K’:
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[Kresult[m[K’
+   36 |     int [01;31m[Kresult[m[K=3;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kresult[m[K’
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ does not name a type
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:36:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K=[m[K’ token
+   36 |     int result[01;31m[K=[m[K3;
+      |               [01;31m[K^[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:36:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   36 |     int [01;36m[Kresult[m[K=3;
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:36:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K=[m[K’ token
+   36 |     int result[01;31m[K=[m[K3;
+      |               [01;31m[K^[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:36:15:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:39:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+   39 |         [01;31m[Kresult[m[K=system("echo 'm' | sudo -S systemctl restart fast_lio2.service");
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/xjj/Practice/restart/src/restart.cpp:41:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+   41 |     if([01;31m[Kresult[m[K==0)
+      |        [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/restart.dir/build.make:76: CMakeFiles/restart.dir/src/restart.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/restart.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
