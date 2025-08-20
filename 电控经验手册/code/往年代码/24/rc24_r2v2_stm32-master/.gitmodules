@@ -1,0 +1,4 @@
+
+[submodule "WTR_micro_ros_stm32cubemx_utils"]
+	path = WTR_micro_ros_stm32cubemx_utils
+	url = https://github.com/WTR2023/WTR_micro_ros_stm32cubemx_utils

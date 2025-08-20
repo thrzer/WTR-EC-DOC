@@ -1,0 +1,37 @@
+-I
+Core/Inc
+-I
+Drivers/STM32F4xx_HAL_Driver/Inc 
+-I
+Drivers/STM32F4xx_HAL_Driver/Inc/Legacy 
+-I
+Drivers/CMSIS/Device/ST/STM32F4xx/Include 
+-I
+Drivers/CMSIS/Include 
+-I
+Middlewares/ST/ARM/DSP/Inc 
+-I
+Middlewares/Third_Party/FreeRTOS/Source/include 
+-I
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 
+-I
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
+-I
+/home/wtr2023/include
+-I 
+Unitree_SDK
+-I
+UC
+-I
+WTR_micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include
+
+# Macros
+-DUSE_HAL_DRIVER
+-DSTM32F427xx
+-DARM_MATH_CM4
+
+# Compiler options
+-Og
+-Wall
+-fdata-sections
+-ffunction-sections

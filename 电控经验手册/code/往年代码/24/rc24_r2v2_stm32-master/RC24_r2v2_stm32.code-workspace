@@ -1,0 +1,30 @@
+{
+	"folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "joint_state.h": "c",
+            "array": "c",
+            "bitset": "c",
+            "string_view": "c",
+            "initializer_list": "c",
+            "ranges": "c",
+            "span": "c",
+            "utility": "c",
+            "vector": "c",
+            "string": "c",
+            "caculate.h": "c",
+            "dji.h": "c",
+            "stdint.h": "c",
+            "wtr_can.h": "c",
+            "stm32f4xx_hal_def.h": "c",
+            "arm_math.h": "c",
+            "_startup.h": "c",
+            "freertos.h": "c",
+            "steering_wheel_chassis.h": "c"
+        }
+    }
+}

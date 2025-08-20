@@ -1,0 +1,249 @@
+//
+// Created by tony on 23-11-2.
+//
+
+#include "_micro_ros_thread.h"
+#include "FreeRTOS.h"
+#include "main.h"
+#include "cmsis_os.h"
+
+#include <rcl/rcl.h>
+#include <rcl/error_handling.h>
+#include <rclc/rclc.h>
+#include <rclc/executor.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <string.h>
+#include <uxr/client/transport.h>
+#include <rmw_microros/rmw_microros.h>
+
+#include <std_msgs/msg/float32_multi_array.h>
+#include <std_msgs/msg/string.h>
+#include <geometry_msgs/msg/pose2_d.h>
+#include <sensor_msgs/msg/joint_state.h>
+
+
+// #include "std_msgs/msg/detail/float32__struct.h"
+#include "rclc/publisher.h"
+#include "stm32f4xx_hal_tim.h"
+#include "tim.h"
+#include "usart.h"
+#include "_startup.h"
+
+//#include "feetech.h"
+
+
+#define M_PI 3.14159265358979323846
+#define RCCHECK(fn)                                                                      \
+    {                                                                                    \
+        rcl_ret_t temp_rc = fn;                                                          \
+        if ((temp_rc != RCL_RET_OK)) {                                                   \
+            printf("Failed status on line %d: %d. Aborting.\n", __LINE__, (int)temp_rc); \
+            return 1;                                                                    \
+        }                                                                                \
+    }
+// 声明 subscriber publisher timer
+rcl_subscription_t chassis_mv_cmd_subscriber;
+
+rcl_publisher_t debug_publisher;
+
+rcl_timer_t timer_fast;
+
+// 声明消息
+std_msgs__msg__String debugmsg;
+geometry_msgs__msg__Pose2D vel_cmd;
+
+
+char PRINT_RunTimeInfo[1024];
+
+
+// 接收回调函数
+void chassis_mv_cmd_subscribe_callback(const void *msgin)
+{
+    const geometry_msgs__msg__Pose2D *vel_cmd = (const geometry_msgs__msg__Pose2D *)msgin;
+    swChassis_set_targetVelocity(&mychassis, vel_cmd->x, vel_cmd->y, vel_cmd->theta);
+}
+
+
+
+//高速定时器回调函数，发布OPS和IMU数据
+void timer_fast_callback(rcl_timer_t *timer, int64_t last_call_time)
+{
+    //sprintf(debugmsg.data.data, "=================================================\r\n");
+    //sprintf(debugmsg.data.data,"任务名                       任务状态 优先级   剩余栈 任务序号\r\n");
+	//vTaskList((char *)&PRINT_RunTimeInfo);
+	// sprintf(debugmsg.data.data,"%s\r\n", PRINT_RunTimeInfo);	
+    // rcl_publish(&debug_publisher, &debugmsg, NULL);			
+	//sprintf(debugmsg.data.data,"任务名                     运行计数              使用率\r\n");
+    //rcl_publish(&debug_publisher, &debugmsg, NULL);
+
+	//vTaskGetRunTimeStats((char *)&PRINT_RunTimeInfo);
+	//sprintf(debugmsg.data.data,"%s\r\n", PRINT_RunTimeInfo);
+    //rcl_publish(&debug_publisher, &debugmsg, NULL);
+}
+
+
+
+// micro-ROS task
+void StartMicrorosTask(void *argument)
+{
+    bool cubemx_transport_open(struct uxrCustomTransport * transport);
+    bool cubemx_transport_close(struct uxrCustomTransport * transport);
+    size_t cubemx_transport_write(struct uxrCustomTransport * transport, const uint8_t *buf, size_t len, uint8_t *err);
+    size_t cubemx_transport_read(struct uxrCustomTransport * transport, uint8_t * buf, size_t len, int timeout, uint8_t *err);
+    void *microros_allocate(size_t size, void *state);
+    void microros_deallocate(void *pointer, void *state);
+    void *microros_reallocate(void *pointer, size_t size, void *state);
+    void *microros_zero_allocate(size_t number_of_elements, size_t size_of_element, void *state);
+    
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    if (rmw_uros_set_custom_transport(
+            true,
+            (void *)&huart3,
+            cubemx_transport_open,
+            cubemx_transport_close,
+            cubemx_transport_write,
+            cubemx_transport_read) == RMW_RET_OK)
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+
+    rcl_allocator_t freeRTOS_allocator = rcutils_get_zero_initialized_allocator();
+    freeRTOS_allocator.allocate        = microros_allocate;
+    freeRTOS_allocator.deallocate      = microros_deallocate;
+    freeRTOS_allocator.reallocate      = microros_reallocate;
+    freeRTOS_allocator.zero_allocate   = microros_zero_allocate;
+
+    if (!rcutils_set_default_allocator(&freeRTOS_allocator))
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    // micro-ROS初始化
+    rclc_support_t support;
+    rcl_allocator_t allocator;
+    rclc_executor_t executor;
+    rcl_node_t node;
+    allocator = rcl_get_default_allocator();
+    // create support
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    if (rclc_support_init(&support, 0, NULL, &allocator) == RCL_RET_OK)
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+
+    // create node
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    if (rclc_node_init_default(&node, "stm32_node", "", &support) == RCL_RET_OK)
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+    std_msgs__msg__String__init(&debugmsg);
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+    // 创建 publisher
+    // 1.debug_publisher
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    if (rclc_publisher_init_default(
+            &debug_publisher,
+            &node,
+            ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String),
+            "debug") == RCL_RET_OK)
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+    // 创建 subscriber
+    // 1.chassis_mv_cmd_subscriber
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    if (rclc_subscription_init_default(
+            &chassis_mv_cmd_subscriber,
+            &node,
+            ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Pose2D),
+            "car/cmd_vel") == RCL_RET_OK)
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+
+    // 创建 timer
+    // 1.timer_fast
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    if (rclc_timer_init_default(
+            &timer_fast,
+            &support,
+            RCL_MS_TO_NS(3000),
+            timer_fast_callback) == RCL_RET_OK)
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+    // 2.timer_slow
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+    // 分配msg内存
+
+    char msg[1024];
+    debugmsg.data.capacity = 1024;
+    debugmsg.data.size = 1024;
+    debugmsg.data.data = msg;
+
+    // create executor
+    executor = rclc_executor_get_zero_initialized_executor();
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    if (rclc_executor_init(&executor, &support.context, 2, &allocator) == RCL_RET_OK)
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+    // add subscriber and timer to executor
+    rclc_executor_add_subscription(
+        &executor,
+        &chassis_mv_cmd_subscriber,
+        &vel_cmd,
+        &chassis_mv_cmd_subscribe_callback,
+        ON_NEW_DATA);
+
+    rclc_executor_add_timer(&executor, &timer_fast);
+
+    rclc_executor_spin(&executor);
+    // clean up
+    
+    rcl_subscription_fini(&chassis_mv_cmd_subscriber, &node);
+    rcl_publisher_fini(&debug_publisher, &node);
+    rcl_timer_fini(&timer_fast);
+    rcl_node_fini(&node);
+    for (;;) {
+        HAL_GPIO_TogglePin(LED4_GPIO_Port, LED4_Pin);
+        vTaskDelay(100/portTICK_PERIOD_MS);
+    }
+}
+
+void joint_state_msg_init(sensor_msgs__msg__JointState * joint_states_msg)
+{
+	joint_states_msg->header.frame_id.data = "base_link";
+	joint_states_msg->header.frame_id.size = 9;
+	joint_states_msg->header.frame_id.capacity = ARRAY_LEN;
+    
+
+	joint_states_msg->name.data = (rosidl_runtime_c__String*)pvPortMalloc(JOINT_DOUBLE_LEN * sizeof(rosidl_runtime_c__String));
+	joint_states_msg->name.size = 0;
+	joint_states_msg->name.capacity = JOINT_DOUBLE_LEN;
+
+	for(int i = 0; i < JOINT_DOUBLE_LEN; i++){
+		joint_states_msg->name.data[i].data = (char*)pvPortMalloc(ARRAY_LEN);
+		joint_states_msg->name.data[i].size = 0;
+		joint_states_msg->name.data[i].capacity = ARRAY_LEN;
+	}
+    for(int i = 0; i < JOINT_DOUBLE_LEN; i++){
+        sprintf(joint_states_msg->name.data[i].data, "joint%d", i);
+        joint_states_msg->name.data[i].size = strlen(joint_states_msg->name.data[i].data);
+    }
+
+	joint_states_msg->position.data = (double*)pvPortMalloc(JOINT_DOUBLE_LEN * sizeof(double));
+    for(int i = 0; i < JOINT_DOUBLE_LEN; i++){
+        joint_states_msg->position.data[i] = 0;
+    }
+	joint_states_msg->position.size= JOINT_DOUBLE_LEN;
+	joint_states_msg->position.capacity = JOINT_DOUBLE_LEN;
+
+	joint_states_msg->velocity.data = (double*)pvPortMalloc(JOINT_DOUBLE_LEN * sizeof(double));
+        for(int i = 0; i < JOINT_DOUBLE_LEN; i++){
+        joint_states_msg->velocity.data[i] = 0;
+    }
+	joint_states_msg->velocity.size = JOINT_DOUBLE_LEN;
+	joint_states_msg->velocity.capacity = JOINT_DOUBLE_LEN;
+
+	// joint_states_msg->effort.data = (double*)pvPortMalloc(JOINT_DOUBLE_LEN * sizeof(double));
+	// joint_states_msg->effort.size = JOINT_DOUBLE_LEN;
+	// joint_states_msg->effort.capacity = JOINT_DOUBLE_LEN;
+}
+
+void joint_state_msg_fini(sensor_msgs__msg__JointState * joint_states_msg)
+{
+    vPortFree(joint_states_msg->header.frame_id.data);
+    for(int i = 0; i < JOINT_DOUBLE_LEN; i++){
+        vPortFree(joint_states_msg->name.data[i].data);
+    }
+    vPortFree(joint_states_msg->name.data);
+    vPortFree(joint_states_msg->position.data);
+    vPortFree(joint_states_msg->velocity.data);
+    vPortFree(joint_states_msg->effort.data);
+}
