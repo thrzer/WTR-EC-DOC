@@ -1,0 +1,6 @@
+# Fragment common to C and C++ source files
+CompileFlags:
+    Add:
+        - "--include-directory=/home/tony/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/include"
+        - "--include-directory=/home/tony/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        - "--include-directory=/home/tony/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"

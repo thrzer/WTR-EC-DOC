@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<mavlink>
+  <version>3</version>
+  <messages>
+    <message id="1" name="SPEED">
+      <description>机器人的速度</description>
+      <field type="double" name="vx">x 方向速度</field>
+      <field type="double" name="vy">y 方向速度</field>
+      <field type="double" name="vw">w 方向角速度</field>
+    </message>
+    <message id="2" name="HEARTBEAT">
+      <description>心跳包</description>
+        <field type="uint8_t" name="status">状态</field>
+        <field type="uint64_t" name="time">启动时间</field>
+    </message>
+  </messages>
+</mavlink>
