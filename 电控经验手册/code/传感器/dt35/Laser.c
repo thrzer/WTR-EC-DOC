@@ -9,6 +9,9 @@
  * 
  */
 
+
+/*******DT35使用详情请见代码仓库：https://github.com/SSC202/WTR_DT35_HW.git************/
+
 #include "Laser.h"
 #include "string.h"
 #include "stdio.h"
